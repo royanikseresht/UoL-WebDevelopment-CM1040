@@ -1,0 +1,516 @@
+/*  
+#0DCEDA default color
+#FFFFFF white
+#28E6F2 highlight 1
+#58ECF5 highlight 2
+#0AA0AA darker 1
+#F1F2F4 very light grey
+#A5A5A5 light grey
+#E6E6E6 grey
+#2B2D2F dark grey
+*/
+
+/* --- GENERAL PARAMETERS --- */
+html,
+body {
+height: fit-content;
+width: 100%;
+margin: 0;
+font-family: 'Poppins', sans-serif;
+color: #2B2D2F;
+background-color: #F1F2F4;
+}
+
+header {
+all: unset;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.content-container {
+padding-bottom: 100px;
+}
+
+.display-container {
+position: relative;
+}
+
+.title {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-container {
+text-align: center;
+}
+
+.general-button {
+width: 50px;
+min-width: fit-content;
+padding: 10px 30px;
+background-color: #7c8cf7;
+color: #FFFFFF;
+margin: 10px 0;
+border: 1px solid #7c8cf7;
+border-radius: 5px;
+cursor: pointer;
+text-decoration: none;
+transition: transform .2s;
+}
+
+.general-button:hover {
+transform: scale(1.2);
+}
+/* GENERAL END */
+
+/* --- NAVBAR --- */
+nav {
+position: sticky;
+top: 0;
+z-index: 1000;
+width: 100%;
+background-color: #F1F2F4;
+padding: 1rem 0;
+display: flex;
+align-items: center;
+justify-content: space-around;
+box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header-link {
+color: #5684B5;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+text-decoration: none;
+}
+
+.active,
+.header-link:hover {
+text-decoration: underline;
+text-underline-offset: 5px;
+}
+
+.logo {
+width: 250px;
+padding-top: 10px;
+}
+
+.logo-wrapper,
+.header-info-wrapper {
+align-self: center;
+}
+/* NAVBAR END */
+
+/* --- FOOTER --- */
+footer {
+display: flex;
+justify-content: space-around;
+bottom: 0;
+background-color: #5684B5;
+height: 70px;
+width: 100%;
+}
+
+.footer-wrapper {
+align-self: center;
+color: #FFFF;
+}
+
+.footer-logo {
+width: 50%;
+padding-top: 10px;
+}
+/* FOOTER END */
+
+/* --------- */
+/* HOME PAGE */
+/* ----------*/
+.container-fluid  {
+max-width: 1270px;
+}
+
+.hero-container {
+display: flex;
+flex-direction: column;
+}
+
+.hero-container .hero-captions {
+background-color: #7c8cf7;
+color: white;
+padding: 20px;
+}
+
+.hero-container .hero-captions h2 {
+margin-top: 0;
+size: 40px;
+font-size: 32px;
+}
+
+.call-to-action-container {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 600px;
+margin: 0 auto;
+}
+
+.call-to-action {
+padding: 20px 10px;
+width: 50%;
+}
+
+.general-button a{
+color: #FFFFFF;
+text-decoration: none;
+}
+
+.call-to-action-container picture {
+width: 50%;
+display: flex;
+justify-content: center;
+}
+
+.call-to-action-container picture img {
+width: 100%;
+height: auto;
+}
+
+.experience-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 600px;
+margin: 0 auto;
+background-color: #F0F2F5;
+}
+
+.cards-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 0 auto;
+margin-top: 50px;
+}
+
+.cards-container .card {
+border-radius: 4.86904px;
+margin: 10px 20px;
+transition: all 0.3s ease-in-out;
+}
+
+.cards-container .card:hover {
+transform: scale(1.2);
+}
+
+.cards-container .card img {
+height: 300px;
+}
+
+.news-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+}
+
+.news-container .news-row {
+display: flex;
+align-items: flex-start;
+margin-top: 70px;
+}
+
+.news-card {
+border-radius: 16px;
+width: 300px;
+transition: all 0.3s ease-in-out;
+margin: 0 20px;
+overflow: hidden;
+box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.news-card .body {
+padding: 20px;
+}
+
+.news-card img {
+width: 100%;
+height: auto;
+}
+/* ------------ */
+/* HOME PAGE END*/
+/* ------------ */
+
+/* --------------- */
+/* FACILITIES PAGE */
+/* --------------- */
+.events-wrapper {
+width: 80%;
+margin: 0 auto;
+}
+
+.event-card-wrapper {
+overflow: hidden;
+border-radius: 0.5rem;
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+margin-top: 20px;
+}
+
+.event-card-img {
+flex: 30%;
+transition: all 0.3s ease-in-out;
+}
+.event-card-img:hover {
+transform: scale(1.2);
+}
+.event-card-desc {
+flex: 70%;
+/*background-color: #28E6F2;*/
+    background-color:aliceblue;
+padding: 2rem;
+}
+
+.card-img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+@media (max-width: 800px) {
+.event-card-wrapper {
+    flex-direction: column;
+}
+}
+/* ------------------- */
+/* FACILITIES PAGE END */
+/* ------------------- */
+
+
+/* ------------ */
+/* TICKETS PAGE */
+/* ------------ */
+.notification-bar {
+background-color: #7c8cf7;
+padding: 15px;
+font-size: 25px;
+font-weight: 500;
+text-align: center;
+}
+
+.ticket-wrapper,
+.merchandise-wrapper {
+width: 80%;
+margin: 0 auto;
+}
+
+.ticket-row,
+.merchandise-row {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.ticket-card {
+padding: 2em;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+transition: 0.3s;
+width: 40%;
+margin: 1rem;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.ticket-card:hover {
+box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+transform: scale(1.05);
+}
+
+.ticket-card-img {
+object-fit: cover;
+width: 100%;
+}
+
+.ticket-card-desc {
+padding: 2px 16px;
+}
+
+.merchandise-card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+transition: 0.3s;
+width: 33%;
+margin: 1rem;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.merchandise-card-img {
+object-fit: cover;
+width: 100%;
+height: 200px;
+}
+
+.merchandise-desc {
+padding: 2px 16px;
+}
+
+.price-whole, .price-desc {
+font-size: 21px;
+}
+
+.price-fraction, .price-symbol {
+top: -0.5em;
+font-size: 12px;
+position: relative;
+}
+
+@media (max-width: 900px) {
+
+.ticket-row,
+.merchandise-row,
+.park-desc-container {
+    flex-direction: column;
+}
+
+.ticket-card,
+.merchandise-card {
+    width: auto;
+}
+}
+/* ---------------- */
+/* TICKETS PAGE END */
+/* ---------------- */
+
+
+
+/* ------------ */
+/* CONTACT PAGE */
+/* ------------ */
+
+/* --- FAQ --- */
+.faq-content {
+width: 80%;
+padding: 25px 0px 25px;
+margin: 0 auto;
+}
+
+.question {
+position: relative;
+background: #f9f9f9;
+margin: 0;
+padding: 10px 10px 10px 20px;
+display: block;
+width:100%;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.question:hover {
+scale: 1.02;
+}
+
+.answer {
+font-size: smaller;
+padding: 0px 35px;
+margin: 5px 0;
+width:100%;
+height: 0;
+overflow: hidden;
+position: relative;
+opacity: 1;
+transition: .3s ease;
+}
+
+/* Displays the 'answers' div when the corresponding 'question' is clicked */
+.questions:checked ~ .answer{
+height: auto;
+opacity: 1;
+padding: 15px;
+}
+
+.questions {
+display: none;
+}
+/* FAQ END */
+
+/* --- DIRECTIONS --- */
+.directions-container {
+display: flex;
+flex-direction: row;
+width: 100%;
+justify-content: center;
+align-items: flex-start;
+}
+
+.directions-header {
+display: flex;
+flex-direction: column;
+width: 400px;
+padding: 0 30px;
+}
+
+.map {
+display: flex;
+width: 40%;
+justify-content: center;
+margin: 55px 0;
+}
+
+iframe {
+border: 0;
+width: 600px;
+height: 450px; 
+}
+/* DIRECTIONS END */
+
+/* --- CONTACT --- */
+.contact-container {
+background: #FFFFFF;
+width: 80%;
+margin: 0 auto;
+padding-bottom: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.contact-button-container {
+display: flex;
+width: 40%;
+justify-content: space-evenly;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.social-container img{
+width: 30px;
+margin: 25px auto;
+transition: 0.5s;
+}
+
+/* Increases icon size on hover */
+.social-container img:hover{
+scale: 1.2;
+}
+
+.social-container {
+display: flex;
+width: 40%;
+justify-content: space-evenly;
+}
+/* CONTACT END */
+
+/* --------------  */
+/* CONTACT PAGE END*/
+/* -------------- */

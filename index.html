@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="This is a website for people to view information about Central Park." />
+  <meta name="author" content="Team 64 (Tutor Group 8)" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="refresh" content="600" />
+  <meta name="keywords" content="Theme Park" />
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="assets/images/myFavicon.jpeg" />
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- title -->
+  <title>Your Official Guide to Central Park</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR : helps users navigate the site -->
+  <header>
+    <nav>
+      <a href="index.html" class="header-link active">Home</a>
+      <a href="facilities.html" class="header-link">Facilities</a>
+      <img src="assets/images/logo.jpeg" alt="park_logo" class="logo" />
+      <a href="tickets.html" class="header-link">Tickets</a>
+      <a href="contact.html" class="header-link">Contact Us</a>
+    </nav>
+  </header>
+  <!-- main section -->
+  <div class="content-container">
+
+    <!-- banner section -->
+    <section class="hero-container">
+      <img class="hero-image" src="assets/images/central.jpg" alt="hero image ferris wheel" />
+      <div class="hero-captions">
+        <header>
+          <h2>Discover the Wild Beauty of Central Park</h2>
+        </header>
+        <span>Adventure Awaits at Every Turn!</span>
+        <br>
+        <span>Event Period : Oct. 7, 2024 - Mar. 31, 2025</span>
+      </div>
+    </section>
+
+    <!-- Call to action section -->
+    <section class="container-fluid call-to-action-container">
+      <div class="call-to-action">
+        <header>
+          <h2>Welcome to Central Park</h2>
+          <h2>Your Gateway to Nature and Adventure!</h2>
+        </header>
+        <p>
+          Explore scenic trails, discover local wildlife, and unwind in nature’s embrace.
+        </p>
+        <br>
+         <!-- call to action button, this is a <a> tag because it is a link -->
+        <div class="general-button" >
+          <a href="/tickets.html">Book online now</a>
+        </div>
+        
+      </div>
+      <picture>
+        <img src="./assets/images/call_to_action_img.jpg" alt="Park picture">
+      </picture>
+    </section>
+
+    <!-- Experience section -->
+    <section class="container-fluid experience-container">
+      <header>
+        <h2>Experience</h2>
+      </header>
+      <div class="cards-container">
+        <!-- this is a list of clickable elements -->
+        <a href="facilities.html" class="card">
+          <img src="./assets/images/home-cards/fun.png" alt="fun family">
+        </a>
+        <a href="facilities.html" class="card">
+          <img src="./assets/images/home-cards/food.png" alt="food">
+        </a>
+        <a href="facilities.html" class="card">
+          <img src="./assets/images/home-cards/pool.png" alt="pool">
+        </a>
+        <a href="facilities.html" class="card">
+          <img src="./assets/images/home-cards/resort.png" alt="resort">
+        </a>
+      </div>
+    </section>
+
+    <!-- news section -->
+    <section class="container-fluid news-container">
+      <header>
+        <h2>News</h2>
+      </header>
+      <div class="news-row">
+        <!-- this is a list of cards, each card represent a news item -->
+        <div class="news-card">
+          <img src="./assets/images//news-images/happy_girl.jpeg" alt=" Please read below before visiting the Parks">
+          <div class="body">
+            <h3>Important: Please read below before visiting the Parks</h3>
+            <p>There may be changes to operating conditions and procedures for experiencing attractions and other facilities since your last visit. Please check the information from below, and prepare in advance before visiting the Parks.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="./assets/images//news-images/priority.jpeg" alt="Priority seating">
+          <div class="body">
+            <h3>Priority Seating (booking restaurants in advance)</h3>
+            <p>This system lets you book a dining time at certain restaurants so you can be seated with a minimal wait after you arrive at the restaurant.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="./assets/images//news-images/healthy-news.jpeg" alt="Health and Safety Measures">
+          <div class="body">
+            <h3>Health and Safety Measures</h3>
+            <p>Important: Measures to ensure a safe and enjoyable time at the Parks and requests when visiting.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="./assets/images//news-images/online_shop.jpeg" alt="online shop">
+          <div class="body">
+            <h3>Shops Inside Parks That Require an Online Reservation</h3>
+            <p>To enter the shops requiring online reservations, please obtain a Standby Pass or make a reservation through the Advance Shop Reservations service (in Japanese only) to select the date and time of visit.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+ 
+  <!-- footer -->
+  <footer>
+    <div class="footer-wrapper">
+      <img src="assets/images/logo2.jpeg" class="footer-logo" alt="Central Park small logo" />
+    </div>
+    <div class="spacer"></div>
+    <div class="footer-wrapper">
+      <span>&copy;2024 All Rights Reserved</span>
+    </div>
+  </footer>
+</body>
+
+</html>

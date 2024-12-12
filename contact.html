@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="This is a website for people to view information about Central Park." />
+  <meta name="author" content="Team 64 (Tutor Group 8)" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="refresh" content="600" />
+  <meta name="keywords" content="Central Park" />
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="assets/images/myFavicon.jpeg" />
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- title -->
+  <title>Your Official Guide to Central Park</title>
+</head>
+
+<body>
+  <!-- NAVBAR : helps users navigate the site -->
+  <header>
+    <nav>
+      <a href="index.html" class="header-link">Home</a>
+      <a href="facilities.html" class="header-link">Facilities</a>
+      <img src="assets/images/logo.jpeg" alt="Central Park Logo" class="logo" />
+      <a href="tickets.html" class="header-link">Tickets</a>
+      <a href="contact.html" class="header-link active">Contact Us</a>
+    </nav>
+  </header>
+    
+  <header class="title">
+    <h1>Contact Us</h1>
+  </header>
+  <!-- FAQ : users click on frequently asked questions to view the answer-->
+  <section class="content-container">
+    <header class="title">
+        <h2>Frequently Asked Questions</h2>
+    </header>
+    <div class="faq-content">
+
+      <!-- FAQ ~ Question 1 -->
+      <div>
+        <!-- Clickable question; answer appears once clicked -->
+        <input type="checkbox" id="question1" name="q"  class="questions">
+        <label for="question1" class="question">
+          What should I bring when visiting Central Park?
+        </label>
+        <!-- Answer, which is displayed when the corresponding question is clicked -->
+        <div class="answer">
+          We recommend bringing comfortable walking shoes, a hat, sunscreen, and a reusable water bottle. If you're planning on relaxing, consider a blanket or picnic gear.
+        </div>
+      </div>
+
+      <!-- FAQ ~ Question 2 -->
+      <div>
+        <!-- Clickable question; answer appears once clicked -->
+        <input type="checkbox" id="question2" name="q"  class="questions">
+        <label for="question2" class="question">
+          What types of merchandise can I purchase in Central Park?
+        </label>
+        <!-- Answer, which is displayed when the corresponding question is clicked -->
+        <div class="answer">
+          Central Park offers a variety of souvenirs, including t-shirts, hats, tote bags, and locally-made crafts. For more information, visit one of our park gift shops.
+        </div>
+      </div>
+
+      <!-- FAQ ~ Question 3 -->
+      <div>
+        <!-- Clickable question; answer appears once clicked -->
+        <input type="checkbox" id="question3" name="q"  class="questions">
+        <label for="question3" class="question">
+          Are there any accessibility services available in Central Park?
+        </label>
+        <!-- Answer, which is displayed when the corresponding question is clicked -->
+        <div class="answer">
+          Yes, Central Park is fully accessible. We offer wheelchair rentals and accessible paths. Please contact our visitor services for more information on accessibility options.
+        </div>
+      </div>
+
+      <!-- FAQ ~ Question 4 -->
+      <div>
+        <!-- Clickable question; answer appears once clicked -->
+        <input type="checkbox" id="question4" name="q"  class="questions">
+        <label for="question4" class="question">
+          What are the park’s operating hours?
+        </label>
+        <!-- Answer, which is displayed when the corresponding question is clicked -->
+        <div class="answer">
+          Central Park is open 24 hours a day, 7 days a week. However, certain facilities and attractions may have specific hours. Be sure to check before planning your visit.
+        </div>
+      </div>
+
+      <!-- FAQ ~ Question 5 -->
+      <div>
+        <!-- Clickable question; answer appears once clicked -->
+        <input type="checkbox" id="question5" name="q"  class="questions">
+        <label for="question5" class="question">
+          Can I bring food into Central Park?
+        </label>
+        <!-- Answer, which is displayed when the corresponding question is clicked -->
+        <div class="answer">
+          Yes, you are welcome to bring your own food and beverages into Central Park. In fact, picnicking is a popular activity, with designated areas to enjoy your meal in a beautiful setting.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECTIONS : help users find their way to the park-->
+  <section class="content-container">
+    <div class="directions-container">
+      <div class="title directions-header">
+        <header>
+          <h2>Address</h2>
+        </header>
+          <address>
+            <p>Central Park, New York, NY 10024, United States/p>
+          </address>
+        <h3>How to Get Here</h3>
+        <p>
+          Central Park is easy to reach no matter how you travel! <br>
+        Whether you're coming by subway, car, bike, or on foot, this map will guide you to the heart of the park for an unforgettable experience.
+        </p>
+        <h3>Park Hours</h3>
+        <p>Open year-round, 24 hours a day!</p>
+      </div>
+      
+      <!-- GOOGLE MAP DISPLAY : users can view the park's location on an interactive map -->
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.053296573257!2d-73.965355!3d40.785091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25856bfc5d305%3A0x15e016c85e6a7405!2sCentral%20Park!5e0!3m2!1sen!2sus!4v1652768919929!5m2!1sen!2sus"  
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT CARD : information about how user's can contact the park-->
+  <section class="content-container">
+    <div class="contact-container">
+      <header class="title">
+          <h2>Contact Us</h2>
+      </header>
+      <p>Please select your preferred contact method below:</p>
+      <div class="contact-button-container">
+        <!-- Button that opens an email that can be sent to get in contact -->
+        <button onclick="location.href='mailto:fakesupport@centralpark.com';" class="general-button">Email</button>
+        <!-- Button that places a call -->
+        <button onclick="location.href='tel:8665562570';" class="general-button">Phone</button>
+      </div>
+      <!-- Social Media Icons which for the purpose of this project link back to /contact page -->
+      <div class="social-container">
+        <a href="/contact.html">
+          <img src="assets/images/social-icons/facebook.png" alt="Facebook social media icon">
+        </a>
+        <a href="/contact.html">
+          <img src="assets/images/social-icons/x.png" alt="X social media icon">
+        </a>
+        <a href="/contact.html">
+          <img src="assets/images/social-icons/instagram.png" alt="Instagram social media icon">
+        </a>
+        <a href="/contact.html">
+          <img src="assets/images/social-icons/youtube.png" alt="Youtube social media icon">
+        </a>
+        <!-- Icons created by Pixel perfect - Flaticon https://www.flaticon.com/free-icons/ -->
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-wrapper">
+      <img src="assets/images/logo2.jpeg" class="footer-logo" alt="Central Park small logo" />
+    </div>
+    <div class="spacer"></div>
+    <div class="footer-wrapper">
+      <span>&copy;2024 All Rights Reserved</span>
+    </div>
+  </footer>
+</body>
+
+</html>
